@@ -1,0 +1,229 @@
+/* Big tablet to 1200px (widths smaller than the 1440px row)*/
+@media only screen and (max-width: 1200px) {
+
+    .proj-row-one p{
+        font-size: 80%;
+    }
+
+    .proj-row-one ul{
+        font-size: 80%;
+    }
+
+    .project-desc h3 {
+        font-size: 200%;
+    }
+
+
+ .socials {
+     padding-left: 10px;
+     padding-right: 5px;
+ }
+
+ .socials p {
+    font-size: 80%;
+}
+
+.skill-list {
+    margin-left: 15px;
+}
+
+.heady {
+    border-bottom: none;
+}
+
+.heady h2 {
+    text-decoration: #12D6FD underline;
+}
+
+
+h2 {
+    font-size: 100%;
+}
+
+}
+
+/* Small tablet to big tablet: from 768px to 1023px;*/
+@media only screen and (max-width: 1023px) {
+
+    .proj-row-one {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-top: 70px;
+        grid-gap: 50px;
+    }
+
+    .proj-row-one p{
+        font-size: 80%;
+    }
+
+    .proj-row-one ul{
+        font-size: 80%;
+    }
+
+    .project-desc h3 {
+        font-size: 200%;
+    }
+
+.socials i {
+    font-size: 500%;
+}
+
+.socials p {
+    font-size: 70%;
+}
+
+.main-nav {
+    float: left;
+    margin-left: 2%;
+    display: none;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    color: #555;
+}
+
+.main-nav li {
+    color: #12D6FD;;
+}
+
+.main-nav li{
+    display: block;
+    font-size: 80%;
+}
+
+nav .mobile-nav-icon {
+    display: inline-block;
+    float: right;
+    font-size: 20%;
+    margin-right: 2%;
+}
+
+h2 {
+    font-size: 100%;
+    float: left;
+}
+
+h1 {
+    margin-left: 10%;
+    display: none;
+}
+
+header h2 {
+    display: inline-block;
+    margin-left: 2%;
+    font-size: 150%;
+}
+
+.socials i:hover,
+.socials i:active {
+    text-shadow: none;
+}
+
+}
+
+/* Small phones to small tablets: from 481px to 767px;*/
+@media only screen and (max-width: 767px) {
+
+    /*Tic Tac Toe*/
+
+    .socials p {
+        display: none;
+    }
+
+    .socials i {
+        font-size: 400%;
+        display: block
+    }
+
+    .ab-two i{
+        font-size: 400%;
+
+    }
+
+    .ab-two p{
+        font-size: 90%;
+        margin-top: -5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    .ab-one p{
+        font-size: 90%;
+    }
+
+    .skill-list {
+        font-size: 90%;
+        margin-bottom: 10px;
+        width: 70%;
+        margin-left: 10%;
+    }
+    
+    .edu-one p {
+        font-size: 80%;
+    }
+}
+
+/* Small Phones from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(3, 75px);
+    }
+    
+    .game-box {
+        height: 75px;
+        border: 2px solid #555;
+        text-align: center;
+    }
+    
+    .game-box i {
+        font-size: 350%;
+        color: #12D6FD;
+    }    
+
+    .player-info input {
+        color: #12D6FD;
+        background-color: #555;
+        border-radius: 20%;
+        width: 70px;
+        height: 20px;
+        margin-top: 25px;
+    }
+
+    .player-info {
+        font-size: 40%;
+        
+    }
+    
+    .player-info input:focus { outline: none; }
+
+    .ab-one p{
+        margin-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .edu-one {
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    .main-hero {
+        margin-left: 35%;
+    }
+
+    footer i {
+        font-size: 300%;
+    }
+    
+    footer P {
+        font-size: 60%;
+    }
+
+    footer .col {
+        padding-left: 0px;
+    }
+}

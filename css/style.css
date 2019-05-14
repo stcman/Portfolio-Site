@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+    color: #555;
+    font-family: 'Orbitron', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+p {
+    font-family: 'Jura', sans-serif;
+}
+
+li {
+    font-family: 'Jura', sans-serif;
+}
+
+/*----------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*----------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0px;
+}
+
+.box {
+    padding: 1%;
+}
+
+input[type=button]:hover {
+    border: 2px solid #12D6FD;
+}
+
+
+/*----------------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------------*/
+
+header h1 {
+    float: left;
+}
+
+header {
+    padding-top: 40px;
+    background-color: #f2f2f2;
+    height: 1200px;
+}
+
+header li {
+    font-family: 'Orbitron', 'Arial', sans-serif;
+}
+
+header nav span {
+    color: #12D6FD;;
+}
+
+header h2 {
+    display: none;
+}
+
+/* ------------- NAV -------------*/
+
+.main-nav {
+    float: right;
+    padding-top: 40px;
+}
+
+.main-nav li {
+    display: inline;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    text-decoration: none;
+    color: #12D6FD;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    text-decoration: none;
+    color: #555;
+}
+
+.main-hero {
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 400px;
+}
+
+/* Sticky Navi */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #cacaca;
+    -webkit-box-shadow: 0 2px 2px #12D6FD;
+            box-shadow: 0 2px 2px #12D6FD;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: -5px;
+}
+
+.sticky .row h1{
+    font-size: 155%;
+}
+
+/* ------------- SOCIAL BUTTONS -------------*/
+
+header i {
+    font-size: 800%;
+    text-decoration: none;
+    color: #12D6FD;
+}
+
+.socials {
+    border: 5px solid #555;
+    width: 40%;
+    border-radius: 20%;
+    background-color: #cacaca;
+}
+
+.socials i:link,
+.socials i:visited {
+    text-decoration: none;
+}
+
+.socials i:hover,
+.socials i:active {
+    -webkit-text-stroke: 1px black;
+   text-shadow:
+       3px 3px 0 #555,
+     -1px -1px 0 #555,  
+      1px -1px 0 #555,
+      -1px 1px 0 #555,
+       1px 1px 0 #555;
+       transition: text-shadow 0.5s ease;
+}
+
+/* ------------- DROPDOWN -------------*/
+
+.ion-android-arrow-dropdown {
+    color: #555;
+    transition: color 0.2s;
+}
+
+.ion-android-arrow-dropdown:hover {
+    color: #12D6FD;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+        3px 3px 0 #555,
+      -1px -1px 0 #555,  
+       1px -1px 0 #555,
+       -1px 1px 0 #555,
+        1px 1px 0 #555;
+        transition: text-shadow 0.5s ease;
+}
+
+
+
+/*----------------------------------------------------*/
+/* ABOUT ME */
+/*----------------------------------------------------*/
+.section-about {
+    border-top: 2px solid #555;
+    border-bottom: 2px solid #555;
+}
+
+.heady {
+    text-align: center;
+    border-bottom: 10px double #12D6FD;
+    width: 30%;
+    font-size: 130%;
+}
+
+.about-me img,
+.ab-one i {
+    float: right;
+}
+
+.about-me img {
+    border: 1px solid #12D6FD;
+    width: 180px;
+}
+
+.ab-one i{
+    font-size: 700%;
+    margin-right: 5%;
+    margin-top: 10px;
+
+    -webkit-text-stroke: 1px #cacaca;
+    text-shadow:
+        1px 1px 0 #12D6FD,
+      -1px -1px 0 #12D6FD,  
+       1px -1px 0 #12D6FD,
+       -1px 1px 0 #12D6FD,
+        1px 1px 0 #12D6FD;
+}
+
+.about-me p {
+    margin-top: 40px;
+}
+
+.about-me {
+    margin-top: 60px;
+    padding-right: 7%;
+}
+
+
+.ab-two i{
+    font-size: 600%;
+    margin-left: 10%;
+    float: right;
+
+    -webkit-text-stroke: 1px #cacaca;
+    text-shadow:
+        2px 2px 0 #12D6FD,
+      -1px -1px 0 #12D6FD,  
+       1px -1px 0 #12D6FD,
+       -1px 1px 0 #12D6FD,
+        1px 1px 0 #12D6FD;
+
+        display: block;
+}
+
+.ab-one {
+    background-color: #cacaca;
+    border-radius: 4%
+}
+
+.ab-two {
+    background-color: #cacaca;
+    border-radius: 4%
+}
+
+/*----------------------------------------------------*/
+/* Education */
+/*----------------------------------------------------*/
+
+.section-education {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #555;
+}
+
+.section-education h3 {
+    font-size: 150%;
+}
+
+.edu-one p{
+   text-align: center; 
+}
+
+.edu-one img{
+    width: 98%;
+    border: 1px solid #555;
+    margin-left: 2px;
+ }
+
+ .edu-one i {
+     color: #12D6FD;
+ }
+
+ .all-edu {
+     margin-top: 60px;
+ }
+
+ .courses {
+     list-style: none;
+     margin-top: 20px;
+ }
+
+ .courses span {
+    color: #12D6FD;
+ }
+
+ .courses li {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 85%;
+ }
+
+ .edu-one-inner {
+     padding-right: 10%;
+ }
+
+ .edu-two-inner {
+    padding-left: 10%;
+ }
+
+ .edu-two-inner h3 {
+     font-size: 110%;
+ }
+
+ .courses i {
+     margin-right: 20px;
+     color: #555;
+ }
+
+
+ /*----------------------------------------------------*/
+/* Skills */
+/*----------------------------------------------------*/
+.section-skills{
+    border-bottom: 2px solid #555;
+}
+
+.all-skills {
+    margin-top: 60px;
+}
+
+.skill-imgs {
+    padding-left: 5%;
+}
+
+.skill-imgs svg {
+    width: 15%;
+    float: left;
+    border: 3px solid #555;
+    margin: 40px 5px;
+}
+
+.skill-list li{
+    margin: 15px;
+    
+}
+
+.skill-list {
+    padding-left: 5%;
+    background-color: #cacaca;
+}
+
+.skills-one,
+.skills-two{
+    width: 80%;
+    border-radius: 4%;
+    padding: 20px;
+}
+
+ /*----------------------------------------------------*/
+/* Projects */
+/*----------------------------------------------------*/
+
+
+.proj-row-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 70px;
+    grid-gap: 50px;
+}
+
+.section-projects {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #555;
+}
+
+.project-desc input{
+    color: #12D6FD;
+    background-color: #555;
+    border-radius: 20%;
+    width: 120px;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 70%;
+}
+
+.project-desc input:focus { outline: none; }
+
+/*----- TicTacToe-----*/
+
+.project-image{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+.project-image img {
+    width: 80%;
+    border-radius: 6px;
+}
+
+.project-desc {
+    background-color: #cacaca;
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+.project-desc h3 {
+    font-size: 400%;
+}
+
+.project-desc h2 {
+    text-decoration: underline;
+}
+
+.project-desc p:first-of-type {
+    margin-top: 20px;
+}
+
+.project-desc li {
+    margin-left: 20px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+}
+
+.game-box {
+    height: 150px;
+    border: 2px solid #555;
+    text-align: center;
+}
+
+.game-box i {
+    font-size: 700%;
+    color: #12D6FD;
+}
+
+.player-info {
+    font-size: 80%;
+    display: block;
+    width: auto;
+}
+
+.titles {
+    padding-top: 20px;
+}
+
+.titles h2{
+    margin-top: 10px;
+    
+}
+
+.active {
+    color: #12D6FD;
+}
+
+.winner { 
+    color: #12D6FD;
+}
+
+.player-info input {
+    color: #12D6FD;
+    background-color: #555;
+    border-radius: 20%;
+    width: 140px;
+    height: 30px;
+    margin-top: 25px;
+}
+
+.player-info input:focus { outline: none; }
+
+.section-projects img:hover{
+    transform: scale(1.05);
+    border: 1px solid #12D6FD;
+}
+
+ /*----------------------------------------------------*/
+/* FOOTER */
+/*----------------------------------------------------*/
+
+footer {
+    background: #555;
+}
+
+footer i {
+    font-size: 500%;
+    color: #12D6FD;
+}
+
+footer P {
+    font-size: 85%;
+}
+
+.bottom-contact {
+    text-align: center;
+    color: #12D6FD;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer .col {
+    padding-left: 25%;
+}
+
+/* Animate Styles */
+.about-me{
+    opacity: 0;
+}
+
+.about-me .js--wp-1{
+    opacity: 1;
+}
+
+footer input{
+    color: #12D6FD;
+    background-color: #555;
+    border-radius: 20%;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+/* Mobile Styles*/
+
+nav .mobile-nav-icon {
+    display: none;
+}
